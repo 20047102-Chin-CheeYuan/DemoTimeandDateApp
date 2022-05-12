@@ -9,6 +9,10 @@ import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+
 public class MainActivity extends AppCompatActivity {
 
     DatePicker dp;
@@ -33,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btnDisplayTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 tvDisplay.setText("Time is " + tp.getCurrentHour() + ":" + tp.getCurrentMinute());
             }
         });
